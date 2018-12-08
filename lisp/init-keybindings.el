@@ -17,3 +17,5 @@
 (provide 'init-keybindings)
 ;;代码缩进
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
+;;Hippie 补全
+(global-set-key (kbd "M-/") 'hippie-expand)
