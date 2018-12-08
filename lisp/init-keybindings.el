@@ -19,5 +19,3 @@
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 ;;Hippie 补全
 (global-set-key (kbd "M-/") 'hippie-expand)
-(global-set-key "\C-h" 'backward-delete-char-untabify)
-(global-set-key "\d" 'delete-char)
