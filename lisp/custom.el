@@ -8,7 +8,8 @@
  '(company-minimum-prefix-length 1)
  '(custom-safe-themes
    (quote
-    ("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" default))))
+    ("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" default)))
+ '(evil-want-C-u-scroll t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

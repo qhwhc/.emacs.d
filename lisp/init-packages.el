@@ -11,6 +11,7 @@
 ;; Add Packages
 (defvar my/packages '(
 	       ;; --- Auto-completion ---
+	       evil
 	       company
 	       swiper
 	       smartparens
@@ -38,6 +39,8 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+
+
 ;;swiper
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
@@ -45,6 +48,8 @@
 ;;popwin配置
 (require 'popwin)
 (popwin-mode t)
+
+(evil-mode 1)
 
 ;;smartparens
 (smartparens-global-mode t)
