@@ -1,0 +1,3 @@
+#+BEGIN_SRC emacs-lisp
+(setq initial-frame-alist (quote ((fullscreen . maximized))))
+#+END_SRC
