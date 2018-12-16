@@ -1,0 +1,16 @@
+* Org-Mode Settings
+** Agenda
+;; 设置默认 Org Agenda 文件目录
+#+BEGIN_SRC emacs-lisp
+(setq org-agenda-files '("~/org"))
+#+END_SRC
+** Syntax Highlight
+;; 设置注释语法高亮
+#+BEGIN_SRC emacs-lisp
+(require 'org)
+(setq org-src-fontify-natively t)
+#+END_SRC
+* Provide
+#+BEGIN_SRC emacs-lisp
+(provide 'init-org)
+#+END_SRC

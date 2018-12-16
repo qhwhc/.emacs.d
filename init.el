@@ -1,18 +1,33 @@
-(package-initialize)
+;;set language
+(set-language-environment "UTF-8")
+
+;;set org-mode to manage settings
 (require 'org-install)
 (require 'ob-tangle)
-(org-babel-load-file (expand-file-name "test.org" user-emacs-directory))
-;;增加读取配置文件的目录
-(add-to-list 'load-path "~/.emacs.d/lisp/")
-;;打开init配置文件函数
-(defun open-my-init-file()
-  (interactive)
-  (find-file "~/.emacs.d/init.el"))
+
+;;Function
+(org-babel-load-file (expand-file-name "lisp/init-function.org" user-emacs-directory))
+
+;;init-packages
+(org-babel-load-file (expand-file-name "lisp/init-packages.org" user-emacs-directory))
 (require 'init-packages)
-(require 'init-ui)
-(require 'init-better-defaults)
+
+;;Org
+(org-babel-load-file (expand-file-name "lisp/init-org.org" user-emacs-directory))
 (require 'init-org)
+
+;;better-defaults
+(org-babel-load-file (expand-file-name "lisp/init-better-defaults.org" user-emacs-directory))
+(require 'init-better-defaults)
+
+;;init-keybindings
+(org-babel-load-file (expand-file-name "lisp/init-keybindings.org" user-emacs-directory))
 (require 'init-keybindings)
 
+;;init-ui
+(org-babel-load-file (expand-file-name "lisp/init-ui.org" user-emacs-directory))
+(require 'init-ui)
+
+;;custom-file
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 (load-file custom-file)
