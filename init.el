@@ -1,7 +1,3 @@
-(package-initialize)
-(require 'org-install)
-(require 'ob-tangle)
-(org-babel-load-file (expand-file-name "lisp/custom.el" user-emacs-directory))﻿
 ;;增加读取配置文件的目录
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 ;;打开init配置文件函数
