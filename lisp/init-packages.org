@@ -20,6 +20,7 @@
 		evil
 		company
 		swiper
+		helm-ag
 		smartparens
 		;; --- Major Mode ---
 		js2-mode
@@ -82,6 +83,12 @@
       (append
        '(("\\.js\\'" . js2-mode))
        auto-mode-alist))
+#+END_SRC
+*** window-numbering
+;;M-0,9 to jump the window
+#+BEGIN_SRC emacs-lisp
+(require 'window-numbering)
+(window-numbering-mode 1)
 #+END_SRC
 ** Theme
 #+BEGIN_SRC emacs-lisp

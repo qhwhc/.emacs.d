@@ -393,7 +393,7 @@
 	 ((:keywords "convenience" "languages")
 	  (:url . "https://github.com/joaotavora/eglot"))])
  (el-search .
-	    [(1 8 3)
+	    [(1 8 4)
 	     ((emacs
 	       (25))
 	      (stream
@@ -652,7 +652,7 @@
 	     ((:url . "http://elpa.gnu.org/packages/json-mode.html")
 	      (:keywords "data"))])
  (jsonrpc .
-	  [(1 0 6)
+	  [(1 0 7)
 	   ((emacs
 	     (25 2)))
 	   "JSON-RPC library" single

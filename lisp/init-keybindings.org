@@ -7,7 +7,11 @@
 (global-set-key (kbd "C-h C-v") 'find-variable)
 (global-set-key (kbd "C-h C-k") 'find-function-on-key)
 #+END_SRC
-
+** AG
+;;u need first to set the system path
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-c p s") 'helm-do-ag)
+#+END_SRC
 ** File Operate
 #+BEGIN_SRC emacs-lisp
 ;; open recentf file
@@ -39,6 +43,7 @@
 ;;git查找文件快捷键
 (global-set-key (kbd "C-c p f") 'counsel-git)
 #+END_SRC
+
 
 * Provide
 #+BEGIN_SRC emacs-lisp

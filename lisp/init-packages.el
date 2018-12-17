@@ -14,6 +14,7 @@
 	       evil
 	       company
 	       swiper
+	       helm-ag
 	       smartparens
 	       ;; --- Major Mode ---
 	       js2-mode
@@ -61,6 +62,9 @@
       (append
        '(("\\.js\\'" . js2-mode))
        auto-mode-alist))
+
+(require 'window-numbering)
+(window-numbering-mode 1)
 
 ;;加载主题
 (load-theme 'monokai t)
