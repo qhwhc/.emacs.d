@@ -1,4 +1,4 @@
-(abbrev-mode t)
+(setq-default abbrev-mode t)
 (define-abbrev-table 'global-abbrev-table '(
 					    ("syso" "System.out.println()")
 					    ))
