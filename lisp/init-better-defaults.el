@@ -1,6 +1,6 @@
 (setq-default abbrev-mode t)
 (define-abbrev-table 'global-abbrev-table '(
-					    ("syso" "System.out.println()")
+					    ("el" "emacs-lisp")
 					    ))
 
 (setq make-backup-files nil)

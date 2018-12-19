@@ -24,4 +24,7 @@
 ;;git查找文件快捷键
 (global-set-key (kbd "C-c p f") 'counsel-git)
 
+(global-set-key (kbd "C-c C-y") 'youdao-dictionary-search-at-point)
+(global-set-key (kbd "C-c y") 'youdao-dictionary-search-from-input)
+
 (provide 'init-keybindings)

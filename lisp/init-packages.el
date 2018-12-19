@@ -24,6 +24,7 @@
 	       monokai-theme
 	       ;; solarized-theme
 	       popwin
+	       youdao-dictionary
 	       ) "Default packages")
 (setq package-selected-packages my/packages)
 (defun my/packages-installed-p () 
@@ -49,6 +50,17 @@
 ;;popwin配置
 (require 'popwin)
 (popwin-mode t)
+
+;; Enable Cache
+(setq url-automatic-caching t)
+;; Integrate with popwin-el (https://github.com/m2ym/popwin-el)
+(push "*Youdao Dictionary*" popwin:special-display-config)
+
+;; Set file path for saving search history
+(setq youdao-dictionary-search-history-file "~/.emacs.d/.youdao")
+
+;; Enable Chinese word segmentation support (支持中文分词)
+(setq youdao-dictionary-use-chinese-word-segmentation t)
 
 (evil-mode 1)
 

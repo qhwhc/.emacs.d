@@ -4,7 +4,7 @@
 #+BEGIN_SRC emacs-lisp
 (setq-default abbrev-mode t)
 (define-abbrev-table 'global-abbrev-table '(
-					    ("syso" "System.out.println()")
+					    ("el" "emacs-lisp")
 					    ))
 #+END_SRC
 
