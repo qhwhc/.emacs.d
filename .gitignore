@@ -1,0 +1,15 @@
+elpa/
+.git/
+url/
+.youdao
+*.el~
+*.org~
+custom.el
+init-better-defaults.el
+init-function.el
+init-keybindings.el
+init-org.el
+init-packages.el
+init-ui.el
+recentf
+smex-items
