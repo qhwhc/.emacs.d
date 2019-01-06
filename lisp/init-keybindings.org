@@ -16,6 +16,11 @@
 (window-numbering-mode 1)
 #+END_SRC
 
+** Youdao
+#+BEGIN_SRC emacs-lisp 
+(global-set-key (kbd "C-c C-y") 'youdao-dictionary-search-at-point)
+(global-set-key (kbd "C-c y") 'youdao-dictionary-search-from-input)
+#+END_SRC
 * Provide
 #+BEGIN_SRC emacs-lisp
 (provide 'init-keybindings)

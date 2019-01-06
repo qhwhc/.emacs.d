@@ -46,9 +46,3 @@
 #+BEGIN_SRC emacs-lisp
 (provide 'init-better-defaults)
 #+END_SRC
-
-
-
-
-
-
