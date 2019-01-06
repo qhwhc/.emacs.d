@@ -33,9 +33,7 @@
      (dolist (pkg my/packages)
        (when (not (package-installed-p pkg))
 	 (package-install pkg))))
- ;; Find Executable Path on OS X
- (when (memq window-system '(mac ns))
-   (exec-path-from-shell-initialize))
+
 #+END_SRC
 
 ** Plugins Settings
@@ -56,8 +54,6 @@
 #+END_SRC
 *** Programming
 #+BEGIN_SRC emacs-lisp
-;;smartparens
-(smartparens-global-mode t)
 ;;设置自动补齐
 (global-company-mode t)
 #+END_SRC
