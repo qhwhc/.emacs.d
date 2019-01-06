@@ -13,3 +13,5 @@ init-packages.el
 init-ui.el
 recentf
 smex-items
+init-abbrev-table.el
+tramp

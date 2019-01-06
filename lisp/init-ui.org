@@ -11,7 +11,6 @@
 (global-hl-line-mode t)
 ;;设置光标
 (setq-default cursor-type 'bar)
-(provide 'init-ui)
 #+END_SRC
 ;;显示行号
 #+BEGIN_SRC emacs-lisp
@@ -21,4 +20,8 @@
 ;;声音取消
 #+BEGIN_SRC emacs-lisp
 (setq ring-bell-function 'ignore)
+#+END_SRC
+** provide
+#+BEGIN_SRC emacs-lisp 
+(provide 'init-ui)
 #+END_SRC

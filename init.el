@@ -27,6 +27,10 @@
 (org-babel-load-file (expand-file-name "lisp/init-keybindings.org" user-emacs-directory))
 (require 'init-keybindings)
 
+;;init-abbrev-table
+(org-babel-load-file (expand-file-name "lisp/init-abbrev-table.org" user-emacs-directory))
+(require 'init-abbrev-table)
+
 ;;init-ui
 (org-babel-load-file (expand-file-name "lisp/init-ui.org" user-emacs-directory))
 (require 'init-ui)

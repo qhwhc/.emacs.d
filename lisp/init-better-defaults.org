@@ -1,13 +1,4 @@
 * Better Defaults
-** define abbrev table
-;;自定义补齐功能
-#+BEGIN_SRC emacs-lisp
-(setq-default abbrev-mode t)
-(define-abbrev-table 'global-abbrev-table '(
-					    ("el" "emacs-lisp")
-					    ))
-#+END_SRC
-
 ** file operate
 ;;去掉备份文件
 #+BEGIN_SRC emacs-lisp
