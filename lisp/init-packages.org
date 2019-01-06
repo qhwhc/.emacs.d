@@ -20,17 +20,6 @@
 		evil
 		company
 		swiper
-		helm-ag
-		smartparens
-		;; --- Major Mode ---
-		js2-mode
-		nodejs-repl
-		exec-path-from-shell
-		;; --- Themes ---
-		monokai-theme
-		;; solarized-theme
-		popwin
-		youdao-dictionary
 		) "Default packages")
  (setq package-selected-packages my/packages)
  (defun my/packages-installed-p () 
@@ -59,26 +48,7 @@
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 #+END_SRC
-*** Popwin
-#+BEGIN_SRC emacs-lisp
-;;popwin配置
-(require 'popwin)
-(popwin-mode t)
-#+END_SRC
-*** Youdao
-#+BEGIN_SRC emacs-lisp 
-;; Enable Cache
-(setq url-automatic-caching t)
-;; Integrate with popwin-el (https://github.com/m2ym/popwin-el)
-(push "*Youdao Dictionary*" popwin:special-display-config)
-
-;; Set file path for saving search history
-(setq youdao-dictionary-search-history-file "~/.emacs.d/.youdao")
-
-;; Enable Chinese word segmentation support (支持中文分词)
-(setq youdao-dictionary-use-chinese-word-segmentation t)
-#+END_SRC
-** Model
+** Mode
 *** evil
 #+BEGIN_SRC emacs-lisp
 (evil-mode 1)
@@ -90,25 +60,7 @@
 ;;设置自动补齐
 (global-company-mode t)
 #+END_SRC
-*** File open model
-#+BEGIN_SRC emacs-lisp
-;;设置js文件打开配置
-(setq auto-mode-alist
-      (append
-       '(("\\.js\\'" . js2-mode))
-       auto-mode-alist))
-#+END_SRC
 *** window-numbering
-;;M-0,9 to jump the window
-#+BEGIN_SRC emacs-lisp
-(require 'window-numbering)
-(window-numbering-mode 1)
-#+END_SRC
-** Theme
-#+BEGIN_SRC emacs-lisp
-;;加载主题
-(load-theme 'monokai t)
-#+END_SRC
 * Provide
 #+BEGIN_SRC emacs-lisp
 (provide 'init-packages)

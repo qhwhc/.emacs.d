@@ -245,5 +245,4 @@ windows to numbers."
   (force-mode-line-update t))
 
 (provide 'window-numbering)
-
 ;;; window-numbering.el ends here

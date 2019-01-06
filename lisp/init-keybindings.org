@@ -1,56 +1,22 @@
 * Keybindings
-** Help
-#+BEGIN_SRC emacs-lisp
-(global-set-key (kbd "<f1> f") 'counsel-describe-function)
-(global-set-key (kbd "<f1> v") 'counsel-describe-variable)
-(global-set-key (kbd "C-h C-f") 'find-function)
-(global-set-key (kbd "C-h C-v") 'find-variable)
-(global-set-key (kbd "C-h C-k") 'find-function-on-key)
-#+END_SRC
-** AG
-;;u need first to set the system path
-#+BEGIN_SRC emacs-lisp
-(global-set-key (kbd "C-c p s") 'helm-do-ag)
-#+END_SRC
 ** File Operate
-#+BEGIN_SRC emacs-lisp
 ;; open recentf file
-(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+#+BEGIN_SRC emacs-lisp
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
-(global-set-key (kbd "<f2>") 'open-my-init-file)
-
 #+END_SRC
 ** Swiper
 #+BEGIN_SRC emacs-lisp
 (global-set-key "\C-s" 'swiper)
 #+END_SRC
 
-** Org
+** window numbering 
+;;M-0,9 to jump the window
 #+BEGIN_SRC emacs-lisp
-;; 设置 org-agenda 打开快捷键
-(global-set-key (kbd "C-c a") 'org-agenda)
-#+END_SRC
-** Programming
-#+BEGIN_SRC emacs-lisp
-;;代码缩进
-(global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
-;;Hippie 补全
-(global-set-key (kbd "M-/") 'hippie-expand)
+(require 'window-numbering)
+(window-numbering-mode 1)
 #+END_SRC
 
-** Git
-#+BEGIN_SRC emacs-lisp
-;;git查找文件快捷键
-(global-set-key (kbd "C-c p f") 'counsel-git)
-#+END_SRC
-
-** Youdao
-#+BEGIN_SRC emacs-lisp 
-(global-set-key (kbd "C-c C-y") 'youdao-dictionary-search-at-point)
-(global-set-key (kbd "C-c y") 'youdao-dictionary-search-from-input)
-#+END_SRC
 * Provide
 #+BEGIN_SRC emacs-lisp
 (provide 'init-keybindings)
 #+END_SRC
-

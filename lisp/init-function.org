@@ -24,10 +24,3 @@
   (line-end-position))
      (message "killed line")))))
 #+END_SRC
-** File Operate
-#+BEGIN_SRC emacs-lisp
-;;打开init配置文件
-(defun open-my-init-file()
-  (interactive)
-  (find-file "~/.emacs.d/init.el"))
-#+END_SRC

@@ -13,3 +13,12 @@
 (setq-default cursor-type 'bar)
 (provide 'init-ui)
 #+END_SRC
+;;显示行号
+#+BEGIN_SRC emacs-lisp
+(global-linum-mode t)
+(global-auto-revert-mode t)
+#+END_SRC
+;;声音取消
+#+BEGIN_SRC emacs-lisp
+(setq ring-bell-function 'ignore)
+#+END_SRC

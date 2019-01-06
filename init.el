@@ -7,7 +7,7 @@
 
 ;; add other el file
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-
+(add-to-list 'load-path "~/.emacs.d/lisp/otherEl")
 ;;Function
 (org-babel-load-file (expand-file-name "lisp/init-function.org" user-emacs-directory))
 
