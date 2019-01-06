@@ -1,0 +1,13 @@
+* 空格自动补全
+** define abbrev table
+#+BEGIN_SRC emacs-lisp
+(setq-default abbrev-mode t)
+(define-abbrev-table 'global-abbrev-table '(
+					    ("el" "emacs-lisp")
+					    ("sshbaidu" "ssh root@106.12.127.134")
+					    ))
+#+END_SRC
+** provide
+#+BEGIN_SRC emacs-lisp 
+(provide 'init-abbrev-table)
+#+END_SRC
