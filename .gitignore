@@ -15,3 +15,6 @@ recentf
 smex-items
 init-abbrev-table.el
 tramp
+eshell/
+.org
+auto-save-list/
