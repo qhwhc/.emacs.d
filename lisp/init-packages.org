@@ -21,6 +21,16 @@
 		company
 		swiper
 		youdao-dictionary
+		;; python
+		;;python-mode
+		;;elpy
+		;;js
+		js2-mode
+		nodejs-repl
+		exec-path-from-shell
+		js2-refactor
+		;;html
+		web-mode
 		) "Default packages")
  (setq package-selected-packages my/packages)
  (defun my/packages-installed-p () 

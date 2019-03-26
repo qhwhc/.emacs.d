@@ -1,0 +1,23 @@
+* JavaScript环境
+** Set Auto-Mode
+#+BEGIN_SRC emacs-lisp
+(setq auto-mode-alist
+      (append
+       '(("\\.js\\'" . js2-mode))
+       auto-mode-alist))
+#+END_SRC
+** let mac find exclude path
+#+BEGIN_SRC emacs-lisp 
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+#+END_SRC
+
+**  js2-refactor
+#+BEGIN_SRC emacs-lisp 
+(add-hook 'js2-mode-hook #'js2-refactor-mode)
+(js2r-add-keybindings-with-prefix "C-c C-m")
+#+END_SRC
+** provide
+#+BEGIN_SRC emacs-lisp 
+(provide 'init-js)
+#+END_SRC
