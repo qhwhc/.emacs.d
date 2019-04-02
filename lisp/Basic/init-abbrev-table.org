@@ -1,0 +1,19 @@
+* 空格自动补全
+** define abbrev table
+#+BEGIN_SRC emacs-lisp
+(setq-default abbrev-mode t)
+(define-abbrev-table 'global-abbrev-table '(
+					    ("el" "emacs-lisp")
+					    ("sshbaidu" "ssh root@106.12.127.134")
+					    ("sshk8s1" "ssh k8s@10.211.55.5")
+					    ("sshk8s2" "ssh k8s@10.211.55.6")
+					    ("sshk8s3" "ssh k8s@10.211.55.7")
+					    ("scpk8s1" "scp k8s@10.211.55.5:/tmp")
+					    ("scpk8s2" "scp k8s@10.211.55.6:/tmp")
+					    ("scpk8s3" "scp k8s@10.211.55.7:/tmp")
+					    ))
+#+END_SRC
+** provide
+#+BEGIN_SRC emacs-lisp 
+(provide 'init-abbrev-table)
+#+END_SRC

@@ -14,4 +14,4 @@
 <p><code>pip install yapf</code><p>
   
 ## lisp环境安装插件
-<p><code>brew install sbcl/code><p>
+<p><code>brew install sbcl</code><p>
