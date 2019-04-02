@@ -13,10 +13,6 @@
 (org-babel-load-file (expand-file-name "lisp/Basic/init-packages.org" user-emacs-directory))
 (require 'init-packages)
 
-;;init-packages
-(org-babel-load-file (expand-file-name "lisp/Basic/package-set.org" user-emacs-directory))
-(require 'package-set)
-
 ;;function
 (org-babel-load-file (expand-file-name "lisp/Basic/init-function.org" user-emacs-directory))
 (require 'init-function)
