@@ -4,7 +4,6 @@ url/
 .youdao
 *.el~
 *.org~
-custom.el
 init-better-defaults.el
 init-function.el
 init-keybindings.el
@@ -13,3 +12,7 @@ init-packages.el
 init-ui.el
 recentf
 smex-items
+abbrev_defs
+ac-comphist.dat
+init-abbrev-table.el
+package-set.el

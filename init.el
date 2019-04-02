@@ -8,12 +8,18 @@
 ;; add other el file
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (add-to-list 'load-path "~/.emacs.d/lisp/otherEl")
-;;Function
-(org-babel-load-file (expand-file-name "lisp/Basic/init-function.org" user-emacs-directory))
-
+(add-to-list 'load-path "~/.emacs.d/Basic")
 ;;init-packages
 (org-babel-load-file (expand-file-name "lisp/Basic/init-packages.org" user-emacs-directory))
 (require 'init-packages)
+
+;;init-packages
+(org-babel-load-file (expand-file-name "lisp/Basic/package-set.org" user-emacs-directory))
+(require 'package-set)
+
+;;function
+(org-babel-load-file (expand-file-name "lisp/Basic/init-function.org" user-emacs-directory))
+(require 'init-function)
 
 ;;Org
 (org-babel-load-file (expand-file-name "lisp/Basic/init-org.org" user-emacs-directory))

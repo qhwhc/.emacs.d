@@ -63,27 +63,6 @@
  
 #+END_SRC
 
-** Plugins Settings
-*** evil
-#+BEGIN_SRC emacs-lisp
-
-#+END_SRC
-*** swiper
-#+BEGIN_SRC emacs-lisp
-;;swiper
-(ivy-mode 1)
-(setq ivy-use-virtual-buffers t)
-#+END_SRC
-** Mode
-*** evil
-#+BEGIN_SRC emacs-lisp
-(evil-mode 1)
-#+END_SRC
-*** Programming
-#+BEGIN_SRC emacs-lisp
-;;设置自动补齐
-(global-company-mode t)
-#+END_SRC
 *** window-numbering
 * Provide
 #+BEGIN_SRC emacs-lisp

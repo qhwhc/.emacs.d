@@ -24,3 +24,7 @@
   (line-end-position))
      (message "killed line")))))
 #+END_SRC
+* Provide
+#+BEGIN_SRC emacs-lisp
+(provide 'init-function)
+#+END_SRC
