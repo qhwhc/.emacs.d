@@ -9,4 +9,6 @@
 (global-company-mode t)
 ;;智能括号
 (smartparens-global-mode 1)
+;;hungry-delete
+(global-hungry-delete-mode)
 (provide 'package-set)

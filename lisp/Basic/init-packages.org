@@ -54,6 +54,7 @@
 		slime
 		;;--- other ---
 		smartparens
+		hungry-delete
 		youdao-dictionary
 		monokai-theme
 		) "Default packages")
