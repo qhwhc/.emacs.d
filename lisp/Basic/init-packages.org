@@ -53,6 +53,7 @@
 		;;lisp
 		slime
 		;;--- other ---
+		smartparens
 		youdao-dictionary
 		monokai-theme
 		) "Default packages")

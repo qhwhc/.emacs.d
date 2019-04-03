@@ -7,5 +7,6 @@
 (load-theme 'monokai 1)
 ;;设置自动补齐
 (global-company-mode t)
-
+;;智能括号
+(smartparens-global-mode 1)
 (provide 'package-set)
