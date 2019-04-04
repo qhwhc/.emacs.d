@@ -1,0 +1,24 @@
+# -*- mode: markdown-mode -*-
+# name: hexo template file
+# key: hexo-file
+# contributor: winterTTr <winterTTr@gmail.com>
+# group: hexo
+# --
+title: ${1:article title}
+sticky: 0
+toc_number: false
+date: `(format-time-string "%F %T")`
+tags:
+  - tag1
+categories:
+  - category1
+---
+
+$0
+
+<!--more-->
+
+
+
+---
+
