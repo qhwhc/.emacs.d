@@ -1,17 +1,24 @@
 ;;set language
 (set-language-environment "UTF-8")
 
-;;set org-mode to manage settings
-(require 'org-install)
-(require 'ob-tangle)
-
 ;; add other el file
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (add-to-list 'load-path "~/.emacs.d/lisp/otherEl")
 (add-to-list 'load-path "~/.emacs.d/Basic")
+
+
+;;use cask to manage packages
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)    ; 类似于 package-initialize
+(require 'pallet)
+(pallet-mode t)      ; 激活 pallet, 在安装包时将 Cask 文件写入相应信息
+;;set org-mode to manage settings
+(require 'org-install)
+(require 'ob-tangle)
+
 ;;init-packages
-(org-babel-load-file (expand-file-name "lisp/Basic/init-packages.org" user-emacs-directory))
-(require 'init-packages)
+;; (org-babel-load-file (expand-file-name "lisp/Basic/init-packages.org" user-emacs-directory))
+;; (require 'init-packages)
 
 ;;function
 (org-babel-load-file (expand-file-name "lisp/Basic/init-function.org" user-emacs-directory))

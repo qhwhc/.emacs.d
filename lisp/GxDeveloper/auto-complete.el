@@ -1,10 +1,3 @@
-(unless (my/packages-installed-p)
-     (message "%s" "Refreshing package database...")
-     (package-refresh-contents)
-     (dolist (pkg my/packages)
-       (when (not (package-installed-p pkg))
-	 (package-install pkg))))
-
 (use-package pos-tip
   :config 
   (require 'pos-tip))

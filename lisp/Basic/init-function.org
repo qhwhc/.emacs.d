@@ -23,6 +23,11 @@
      (kill-region (line-beginning-position)
   (line-end-position))
      (message "killed line")))))
+
+(defun my/packages-installed-p () 
+     (loop for pkg in my/packages
+	   when (not (package-installed-p pkg)) do (return nil)
+	   finally (return t)))
 #+END_SRC
 * Provide
 #+BEGIN_SRC emacs-lisp

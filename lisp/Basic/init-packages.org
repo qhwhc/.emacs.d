@@ -59,6 +59,7 @@
 		hungry-delete
 		youdao-dictionary
 		monokai-theme
+		pallet
 		) "Default packages")
  (setq package-selected-packages my/packages)
  (defun my/packages-installed-p () 
