@@ -9,6 +9,9 @@
 (global-company-mode t)
 ;;智能括号
 (smartparens-global-mode 1)
+;;显示单个引号
+(sp-local-pair 'emacs-lisp-mode "`" nil :actions nil)
+(sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
 ;;hungry-delete
 (global-hungry-delete-mode)
 (provide 'package-set)

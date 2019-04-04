@@ -1,5 +1,6 @@
 (source "gnu" "http://elpa.emacs-china.org/gnu/")
 (source "melpa" "http://elpa.emacs-china.org/melpa/")
+(source "melpa-stable" "http://elpa.emacs-china.org/melpa-stable/")
 
 (depends-on "ansi")
 (depends-on "async")
@@ -8,6 +9,7 @@
 (depends-on "cask")
 (depends-on "chinese-word-at-point")
 (depends-on "company")
+(depends-on "company-anaconda")
 (depends-on "csharp-mode")
 (depends-on "dash")
 (depends-on "elpy")
